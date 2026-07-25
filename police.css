@@ -1,0 +1,1237 @@
+
+@charset "UTF-8";
+
+
+/* =================================
+   霧林市警政檔案庫
+   Government Archive Style
+================================= */
+
+
+
+* {
+
+    box-sizing:
+    border-box;
+
+}
+
+
+
+body {
+
+
+    margin:
+    0;
+
+
+    padding:
+    0;
+
+
+    background:
+    #f5f5f5;
+
+
+    color:
+    #333333;
+
+
+    font-family:
+
+    "Noto Sans TC",
+    "Microsoft JhengHei",
+    Arial,
+    sans-serif;
+
+
+}
+
+
+
+
+/* =================================
+   Main Container
+================================= */
+
+
+.page-container {
+
+
+    width:
+    100%;
+
+
+    max-width:
+    960px;
+
+
+    margin:
+    0 auto;
+
+
+    background:
+    #ffffff;
+
+
+    min-height:
+    100vh;
+
+
+    border-left:
+    1px solid #dddddd;
+
+
+    border-right:
+    1px solid #dddddd;
+
+
+}
+
+
+
+
+
+
+/* =================================
+   Government Header
+================================= */
+
+
+.government-header {
+
+
+    display:
+    flex;
+
+
+    align-items:
+    center;
+
+
+    padding:
+    30px 40px;
+
+
+    background:
+    #ffffff;
+
+
+    border-bottom:
+    4px solid #1a3a5c;
+
+
+}
+
+
+
+
+.badge {
+
+
+    width:
+    70px;
+
+
+    height:
+    70px;
+
+
+    border:
+    3px solid #1a3a5c;
+
+
+    border-radius:
+    50%;
+
+
+    display:
+    flex;
+
+
+    justify-content:
+    center;
+
+
+    align-items:
+    center;
+
+
+    color:
+    #1a3a5c;
+
+
+    font-size:
+    36px;
+
+
+    margin-right:
+    25px;
+
+
+}
+
+
+
+
+.header-text h1 {
+
+
+    margin:
+    0;
+
+
+    font-family:
+
+    "Noto Serif TC",
+    serif;
+
+
+    font-size:
+    32px;
+
+
+    font-weight:
+    700;
+
+
+    color:
+    #1a3a5c;
+
+
+
+}
+
+
+
+.header-text p {
+
+
+    margin:
+    8px 0 0;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    font-size:
+    13px;
+
+
+    color:
+    #666666;
+
+
+    letter-spacing:
+    1px;
+
+
+}
+
+
+
+
+/* =================================
+   Navigation
+================================= */
+
+
+.system-nav {
+
+
+    display:
+    flex;
+
+
+    background:
+    #1a3a5c;
+
+
+}
+
+
+
+.system-nav a {
+
+
+    flex:
+    1;
+
+
+    text-align:
+    center;
+
+
+    padding:
+    14px 10px;
+
+
+    color:
+    #ffffff;
+
+
+    text-decoration:
+    none;
+
+
+    font-size:
+    14px;
+
+
+    border-right:
+    1px solid rgba(
+        255,
+        255,
+        255,
+        0.2
+    );
+
+
+}
+
+
+
+.system-nav a:hover {
+
+
+    background:
+    #274f78;
+
+
+}
+
+
+/* =================================
+   System Title
+================================= */
+
+
+.system-title {
+
+
+    padding:
+    30px 40px 20px;
+
+
+}
+
+
+
+.system-title h2 {
+
+
+    margin:
+    0 0 20px;
+
+
+    font-family:
+
+    "Noto Serif TC",
+    serif;
+
+
+    font-size:
+    24px;
+
+
+    color:
+    #1a3a5c;
+
+
+    border-bottom:
+    1px solid #dddddd;
+
+
+    padding-bottom:
+    15px;
+
+
+}
+
+
+
+
+
+.system-info {
+
+
+    display:
+    flex;
+
+
+    justify-content:
+    space-between;
+
+
+    background:
+    #f8f8f8;
+
+
+    border:
+    1px solid #dddddd;
+
+
+    padding:
+    15px 20px;
+
+
+    font-size:
+    13px;
+
+
+}
+
+
+
+.system-info span {
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+}
+
+
+
+.classified {
+
+
+    color:
+    #c0392b;
+
+
+    font-weight:
+    bold;
+
+
+}
+
+
+
+
+
+
+/* =================================
+   Notice Panel
+================================= */
+
+
+.notice-panel {
+
+
+    margin:
+    0 40px 25px;
+
+
+    padding:
+    20px;
+
+
+    background:
+    #ffffff;
+
+
+    border:
+    1px solid #cccccc;
+
+
+    border-left:
+    5px solid #1a3a5c;
+
+
+}
+
+
+
+.notice-panel h3 {
+
+
+    margin-top:
+    0;
+
+
+    color:
+    #1a3a5c;
+
+
+    font-family:
+
+    "Noto Serif TC",
+    serif;
+
+
+}
+
+
+
+.notice-panel p {
+
+
+    margin:
+    8px 0;
+
+
+    line-height:
+    1.8;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   Dashboard
+================================= */
+
+
+.dashboard {
+
+
+    display:
+    grid;
+
+
+    grid-template-columns:
+    repeat(
+        3,
+        1fr
+    );
+
+
+    gap:
+    20px;
+
+
+    padding:
+    0 40px 30px;
+
+
+}
+
+
+
+
+
+.dashboard-box {
+
+
+    background:
+    #ffffff;
+
+
+    border:
+    1px solid #cccccc;
+
+
+    padding:
+    20px;
+
+
+    text-align:
+    center;
+
+
+}
+
+
+
+.dashboard-box h3 {
+
+
+    margin:
+    0 0 15px;
+
+
+    color:
+    #555555;
+
+
+    font-size:
+    15px;
+
+
+}
+
+
+
+.dashboard-box strong {
+
+
+    display:
+    block;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    font-size:
+    36px;
+
+
+    color:
+    #1a3a5c;
+
+
+}
+
+
+
+
+
+
+
+
+/* =================================
+   Latest Case Table
+================================= */
+
+
+.latest-section {
+
+
+    padding:
+    0 40px 40px;
+
+
+}
+
+
+
+.latest-section h2 {
+
+
+    font-family:
+
+    "Noto Serif TC",
+    serif;
+
+
+    color:
+    #1a3a5c;
+
+
+    font-size:
+    22px;
+
+
+    border-bottom:
+    2px solid #1a3a5c;
+
+
+    padding-bottom:
+    10px;
+
+
+}
+
+
+
+table {
+
+
+    width:
+    100%;
+
+
+    border-collapse:
+    collapse;
+
+
+}
+
+
+
+th {
+
+
+    background:
+    #1a3a5c;
+
+
+    color:
+    white;
+
+
+    padding:
+    12px;
+
+
+    text-align:
+    left;
+
+
+    font-size:
+    14px;
+
+
+}
+
+
+
+td {
+
+
+    border-bottom:
+    1px solid #dddddd;
+
+
+    padding:
+    12px;
+
+
+    font-size:
+    14px;
+
+
+}
+
+
+
+tr:hover {
+
+
+    background:
+    #f7f7f7;
+
+
+}
+
+
+
+.case-number {
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    color:
+    #555555;
+
+
+}
+
+
+/* =================================
+   Case Status
+================================= */
+
+
+.status {
+
+
+    display:
+    inline-block;
+
+
+    padding:
+    4px 10px;
+
+
+    font-size:
+    12px;
+
+
+    border-radius:
+    2px;
+
+
+    font-weight:
+    bold;
+
+
+}
+
+
+
+
+.status-open {
+
+
+    color:
+    #c0392b;
+
+
+    border:
+    1px solid #c0392b;
+
+
+    background:
+    #fff5f5;
+
+
+}
+
+
+
+.status-closed {
+
+
+    color:
+    #1a3a5c;
+
+
+    border:
+    1px solid #1a3a5c;
+
+
+    background:
+    #f5f8fb;
+
+
+}
+
+
+
+.status-archive {
+
+
+    color:
+    #666666;
+
+
+    border:
+    1px solid #999999;
+
+
+    background:
+    #eeeeee;
+
+
+}
+
+
+
+
+
+
+/* =================================
+   Government Footer
+================================= */
+
+
+.government-footer {
+
+
+    border-top:
+    1px solid #dddddd;
+
+
+    margin-top:
+    30px;
+
+
+    padding:
+    25px 40px;
+
+
+    text-align:
+    center;
+
+
+    color:
+    #666666;
+
+
+    font-size:
+    12px;
+
+
+    line-height:
+    2;
+
+
+    background:
+    #fafafa;
+
+
+}
+
+
+
+
+.system-version {
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    color:
+    #999999;
+
+
+}
+
+
+
+
+
+
+/* =================================
+   Hidden ARG Elements
+================================= */
+
+
+.hidden-access {
+
+
+    position:
+    fixed;
+
+
+    bottom:
+    5px;
+
+
+    right:
+    10px;
+
+
+}
+
+
+
+.hidden-access a {
+
+
+    color:
+    #1a3a5c;
+
+
+    font-size:
+    8px;
+
+
+    text-decoration:
+    none;
+
+
+    opacity:
+    0.35;
+
+
+}
+
+
+
+.hidden-access a:hover {
+
+
+    opacity:
+    1;
+
+
+}
+
+
+
+
+
+/* =================================
+   Archive Document Style
+================================= */
+
+
+.document-box {
+
+
+    margin:
+    40px;
+
+
+    padding:
+    30px;
+
+
+    border:
+    1px solid #cccccc;
+
+
+    background:
+    #ffffff;
+
+
+}
+
+
+
+.document-title {
+
+
+    font-family:
+
+    "Noto Serif TC",
+    serif;
+
+
+    font-size:
+    26px;
+
+
+    color:
+    #1a3a5c;
+
+
+    text-align:
+    center;
+
+
+    margin-bottom:
+    30px;
+
+
+}
+
+
+
+
+.document-meta {
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    color:
+    #555555;
+
+
+    border-bottom:
+    1px solid #dddddd;
+
+
+    padding-bottom:
+    15px;
+
+
+}
+
+
+
+.redacted {
+
+
+    background:
+    #111111;
+
+
+    color:
+    #111111;
+
+
+    padding:
+    0 5px;
+
+
+}
+
+
+
+.redacted:hover {
+
+
+    color:
+    #ffffff;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   Mobile Responsive
+================================= */
+
+
+@media
+(max-width:768px){
+
+
+
+.page-container {
+
+
+    border:
+    none;
+
+
+}
+
+
+
+
+.government-header {
+
+
+    padding:
+    25px;
+
+
+}
+
+
+
+.badge {
+
+
+    width:
+    55px;
+
+
+    height:
+    55px;
+
+
+    font-size:
+    28px;
+
+
+}
+
+
+
+.header-text h1 {
+
+
+    font-size:
+    24px;
+
+
+}
+
+
+
+.system-nav {
+
+
+    flex-wrap:
+    wrap;
+
+
+}
+
+
+
+.system-nav a {
+
+
+    flex:
+    1 1 50%;
+
+
+}
+
+
+
+
+.system-info {
+
+
+    flex-direction:
+    column;
+
+
+    gap:
+    10px;
+
+
+}
+
+
+
+.dashboard {
+
+
+    grid-template-columns:
+    1fr;
+
+
+    padding:
+    0 20px 20px;
+
+
+}
+
+
+
+.notice-panel {
+
+
+    margin:
+    0 20px 25px;
+
+
+}
+
+
+
+.latest-section {
+
+
+    padding:
+    0 20px 30px;
+
+
+}
+
+
+
+table {
+
+
+    font-size:
+    12px;
+
+
+}
+
+
+
+th,
+td {
+
+
+    padding:
+    8px;
+
+
+}
+
+
+
+.government-footer {
+
+
+    padding:
+    20px;
+
+
+}
+
+
+
+}
